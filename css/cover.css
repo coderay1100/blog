@@ -40,6 +40,7 @@ body {
 .site-wrapper {
   display: table;
   width: 100%;
+  height: 100%; /* For at least Firefox */
   min-height: 100%;
 }
 .site-wrapper-inner {
@@ -47,8 +48,8 @@ body {
   vertical-align: top;
 }
 .cover-container {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 /* Padding for spacing */
@@ -72,8 +73,8 @@ body {
   margin-left: 20px;
 }
 .masthead-nav > li > a {
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
   font-size: 16px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */

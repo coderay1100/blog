@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Tutorial Git Untuk Pemula (Indonesia) - Raibima's Blog
+    </title>
+    <link rel="alternate" href="http://coderay1100.github.io/blog/feed.xml" type="application/rss+xml" title="My daily tips &amp; tricks on web development">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body class="article-detail">
+    <header class="header">
+      <div class="content-wrap">
+        <h1>Tutorial Git Untuk Pemula (Indonesia)</h1>
+        <p class="author">Written by <span class="author"><a href="mailto:rayp1100@gmail.com">Raibima Putra</a></span>
+        </p>
+      </div>
+    </header>
+    <div id="content">
+      <div class="content-wrap">
+        <article class="article">
+          <section class="content"><p>Halo! Di blog post pertama saya ini, saya akan coba jelaskan sedikit mengenai <em>Git</em> Version Control System&nbsp;(<span class="caps">VCS</span>).</p>
+<h2 id="apa-itu-git-">Apa itu&nbsp;git?</h2>
+<p>Git, singkat cerita, adalah sebuah <em>Version Control System</em> (<span class="caps">VCS</span>), yaitu sebuah <em>tool</em> yang dapat digunakan untuk <strong>memantau
+perubahan-perubahan yang diterapkan ke suatu file atau folder</strong>.</p>
+<h2 id="contoh-penggunaan-git">Contoh penggunaan&nbsp;Git</h2>
+<p>Pastikan Git telah terinstal di komputer&nbsp;anda.</p>
+<ul>
+<li>Pengguna Windows: Jalankan Git&nbsp;Bash.</li>
+<li>Pengguna Mac/Linux: Jalankan&nbsp;terminal.</li>
+</ul>
+<p>Buatlah suatu folder baru, namanya bebas, dan masuk ke dalam folder&nbsp;tersebut:</p>
+<pre><code>$ mkdir folder-baru
+$ cd folder-baru
+</code></pre><p>Beri tahu Git bahwa anda akan bekerja di folder&nbsp;ini:</p>
+<pre><code class="lang-bash">$ git init
+</code></pre>
+<p>Sekarang anda bisa mulai bekerja di dalam folder ini. Sebagai contoh, buatlah file sederhana dan beri tahu git bahwa
+anda ingin file tersebut dipantau&nbsp;perubahan-perubahannya:</p>
+<pre><code>$ touch contoh-file.txt
+$ git add contoh-file.txt
+</code></pre><p>Ingat bahwa Git adalah <em><strong>Version</strong> Control System</em> (<span class="caps">VCS</span>)! Anda perlu <strong>membuat versi</strong> untuk setiap perubahan yang anda 
+terapkan dan <strong>memberikan pesan</strong> mengenai perubahan-perubahan apa saja yang anda telah terapkan pada file-file yang sedang 
+anda&nbsp;kerjakan:</p>
+<pre><code>$ git commit -m &quot;Commit pertama. Membuat file kosong bernama contoh-file.txt :)&quot;
+</code></pre><p>Jika sudah, anda bisa coba membuat perubahan-perubahan pada file yang baru saja diberikan versi. Silakan <em>edit</em> file 
+<em>contoh-file.txt</em>, tambahkan konten apa saja, lalu simpan. Anda baru saja merubah sesuatu di file tersebut, mari kita 
+<strong>lihat perubahan</strong> apa saja yang sudah anda&nbsp;lakukan:</p>
+<pre><code>$ git diff
+</code></pre><p>Seperti yang anda lihat, Git sangatlah pintar. <strong>Git tahu apa saja yang anda ubah sejak anda terakhir menetapkan suatu versi</strong>. 
+Sama seperti tadi, perubahan yang anda terapkan harus diberi versi&nbsp;baru:</p>
+<pre><code>$ git add contoh-file.txt
+$ git commit -m &quot;Sedikit perubahan di dalam contoh-file.txt.&quot;
+</code></pre><p><strong>Kok repot sekali, ya? Masa sih tiap kali ada file berubah harus kita ‘add’ lalu ‘commit’?</strong> Jangan salah, Git ternyata punya 
+jalan pintas untuk melakukan dua hal tersebut sekaligus dalam satu perintah&nbsp;saja:</p>
+<pre><code>$ git commit -am &quot;Sedikit perubahan di dalam contoh-file.txt.&quot;
+</code></pre><p><strong><span class="caps">TO</span> BE&nbsp;CONTINUED</strong></p>
+</section>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="content-wrap">
+        <div class="nav"><a href="/">« Full blog</a></div>
+        <section class="about"><p>Wintersmith is made by <a href="http://johan-nordberg.com/">Johan Nordberg</a> and licensed under the <a href="http://opensource.org/licenses/MIT">MIT-license</a>.
+This footer text can be edited in about.md</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.</p>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+dolore eu fugiat nulla pariatur.</p>
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum.</p>
+
+        </section>
+        <section class="copy">
+          <p>&copy; 2014 Raibima Putra &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
